@@ -11,6 +11,17 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="[big long string of letters and numbers]"
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- favicon-->
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
 </head>
 
 <body class="main-text-color">
@@ -28,7 +39,7 @@
     </div>
     <!-- Replace the # inside of the href="#" with your links. -->
     <div class="links-container">
-      <div class="button toggle">Blog post</div>
+      <div class="button button-background-color toggle"><i class = "fab fa-medium"></i> Blog post</div>
       <div class="slidedown">
         <div class="description">
           <h2>Strength in Conviction: Getting Stronger in the Gym</h2>
@@ -37,24 +48,48 @@
           <a href="https://medium.com/@jchen9896/strength-in-conviction-getting-stronger-516d5e411d9b" class="external-link" target="_blank">Read</a>
         </div>
       </div>
-
-      <div class="button toggle">Video</div>
+      
+      <div class="button button-background-color toggle"><i class = "fab fa-youtube"></i> Video</div>
       <div class="slidedown">
         <div class="description">
           <h2>Pen Spin to Lock In!</h2>
           <p>Having a hard time focusing in class? Do you need a way to deal with fidgeting thumbs and jittery legs? Well, look no further! Let me show you how to pen spin!</p>
-          <img src="https://upload.wikimedia.org/wikipedia/commons/e/e5/Thumb_Spin_%28Pen_Spinning_Trick%29.gif" alt="This is a gif from a creative commons search of a guy spinning a pen.">
-          <a href="https://www.youtube.com/shorts/yOcmrk90Wbw" class="external-link" target="_blank">Watch</a>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/e/e5/Thumb_Spin_%28Pen_Spinning_Trick%29.gif" alt="This is a gif from a creative commons search of a guy spinning a pen." style = "margin-bottom: 50px">
+          <style>
+            .embed-container {
+              position: relative;
+              padding-bottom: 177.78%;
+              height: 0;
+              overflow: hidden;
+              max-width: 100%;
+            }
+          
+            .embed-container iframe,
+            .embed-container object,
+            .embed-container embed {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+            }
+          </style>
+          <div class="embed-container">
+            <iframe width="1080" height="1920" src="https://www.youtube.com/embed/yOcmrk90Wbw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          <a style = "margin-top: 50px" href="https://www.youtube.com/shorts/yOcmrk90Wbw" class="external-link" target="_blank">Watch</a>
         </div>
       </div>
 
-      <div class="button toggle">Podcast</div>
+      <div class="button button-background-color toggle"><i class = "fab fa-soundcloud"></i> Podcast</div>
       <div class="slidedown">
         <div class="description">
           <h2>Best of Blacksburg Dining and Cuisine</h2>
           <p>Are you hungry and in the Blacksburg area? Tune into my podcast to hear more about the local restaurants that appeal to Virginia Tech students.</p>
-          <img src="https://live.staticflickr.com/717/21936418155_f6244ca694_b.jpg" alt="This is a picture from a creative commons search of a burger, french fries, and a salad.">
-          <a href="https://soundcloud.com/faith-casey-36984261" class="external-link" target="_blank">Listen</a>
+          <img src="https://live.staticflickr.com/717/21936418155_f6244ca694_b.jpg" alt="This is a picture from a creative commons search of a burger, french fries, and a salad." style = "margin-bottom: 50px">
+
+          <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/2074614376&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/faith-casey-36984261" title="Faith Casey" target="_blank" style="color: #cccccc; text-decoration: none;">Faith Casey</a> · <a href="https://soundcloud.com/faith-casey-36984261/best-of-blacksburg-dining-and-cuisine" title="Best of Blacksburg Dining and Cuisine" target="_blank" style="color: #cccccc; text-decoration: none;">Best of Blacksburg Dining and Cuisine</a></div>
+          <a style = "margin-top: 50px" href="https://soundcloud.com/faith-casey-36984261" class="external-link" target="_blank">Listen</a>
         </div>
       </div>
     </div>
@@ -64,10 +99,10 @@
       <h1>About me</h1>
     </div>
     <div class="links-container">
-      <a href="https://www.linkedin.com/in/joey-chenn/" class="button" target="_blank">Linkedin</a>
+      <a href="https://www.linkedin.com/in/joey-chenn/" class="button" target="_blank"> <i class = "fab fa-linkedin"></i> Linkedin</a>
     </div>
     <div class="links-container">
-      <a href="https://github.com/Jchen9896" class="button" target="_blank">Github</a>
+      <a href="https://github.com/Jchen9896" class="button" target="_blank"><i class = "fab fa-github"></i> Github</a>
     </div>
 
   </div>
